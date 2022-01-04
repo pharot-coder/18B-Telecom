@@ -1,0 +1,415 @@
+ *{
+ 	box-sizing: border-box;
+ 	font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body{
+ 	padding: 0 0;
+ 	margin: 0 0;
+ 	background-color: #eff3f9;
+ 	height: 100%;
+ }
+
+ .btn-circle{
+ 	border-radius: 50px;
+ }
+
+ #sidebarshowBtn{
+ 	display: none;
+ 	width: 50px;
+ 	height: 30px;
+ 	margin-left: 10px;
+ 	margin-top: 10px; 
+ 	text-align: center;
+ 	font-size: 20px;
+ }
+
+ .wrapper{
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ }
+ 
+ .content-wrapper{
+ 	width: 100%;
+ 	height: 100%;
+ 	margin: 0 0;
+ }
+
+ .sidebar{
+ 	width: 350px;
+ 	margin-top: 0;
+ 	top: 0;
+ 	bottom: 0;
+ 	margin-bottom: 0;
+ 	background-color: orange;
+ 	text-align: left;
+ 	transition: 0.5s;
+ 	overflow-x: hidden;
+ 	z-index: 1;
+
+ }
+
+ .sidebar * {
+ 	color: white;
+ 	padding: 5px;
+ 	transition: 0.5s;
+ }
+
+ .navbar{
+ 	background: orange;
+ 	border: 1px solid black;
+ } 
+
+ .navbar ul li{
+ 	text-align: center;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
+ #footer{
+ 	background: orange;
+ 	font-family: arial;
+ }
+
+ .top-bar{
+ 	background: orange;
+ 	padding: 5px;
+ 	position: sticky;
+ 	z-index: 100;
+ 	width: 100%;
+ 	top: 0;
+ }
+
+ hr{
+ 	width: 100%;
+ 	border: 1px solid grey;
+ }
+
+ .top-bar > *{
+ 	color: white;
+ }
+
+ .top-bar p{
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+ }
+ .item{
+ 	height: 100px;
+ 	width: 100px;
+ 	text-align: center;
+ 	border: 1px solid grey;
+
+ }
+
+ @media only screen and (max-width: 576px){
+ 	.card > a {
+ 		margin: 10px auto;
+ 		justify-content: center;
+ 		align-items: center;
+ 	}
+
+ 	.row{
+ 		justify-content: center;
+ 		align-items: center;
+ 	}
+ }
+
+ .login-logo {
+ 	margin: 0 auto;
+ 	width: 300px;
+ }
+
+ .login-box {
+ 	margin-top: 50px;
+ 	margin-bottom: 50px;
+ 	background: white;
+ 	padding: auto auto;
+ 	width: 500px;
+ 	height: 100%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	border: 2px solid black;
+ }
+
+ .register-box {
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+ 	background: white;
+ 	padding: auto auto;
+ 	width: 500px;
+ 	height: 100%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	border: 2px solid black;
+ }
+
+ .card-product:hover{
+ 	border: 1.5px solid red;
+ }
+
+ .star{
+ 	color: red;
+ }
+
+
+ footer{
+ 	margin-bottom: 0;
+ 	bottom: 0;
+ 	right: 0;
+ 	left: 0;
+ }
+
+ .list-group-box{
+ 	width: 100%;
+ 	height: 100%;
+ 	padding: 5px;
+ }
+
+ .list-group-item{
+ 	margin-left: 10px;
+ }
+
+ .item {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .item:hover {
+ 	border: 2px solid red;
+ }
+
+ .img-fluid {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .brand-box{
+ 	background-color: lightgray;
+ 	padding: 5px;
+ }
+
+ .category-text-box{
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: orange;
+ 	color: white;
+ 	padding: 5px;
+ 	border-radius: 10px;
+ }
+
+ .most-view-text{
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: orange;
+ 	color: white;
+ 	padding: 5px;
+ 	border-radius: 10px;
+ }
+
+ .brand-text-box {
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: orange;
+ 	color: white;
+ 	padding: 5px;
+ 	border-radius: 10px;	
+ }
+
+ .payments-box{
+ 	border: 1px solid grey;
+ }
+
+ .summary-order-box{
+ 	width: 100%;
+ 	background-color: white;
+ }
+
+ .searchbox{
+ 	width: 20px;
+ 	background-color: white;
+ 	color: black;
+ }
+
+ .list-group-item:hover{
+ 	box-shadow: 1px 1px 20px  #aaaaaa;
+ }
+
+ .history-order-box{
+ 	background-color: white;
+ 	color: black;
+ 	padding: 5px 5px;
+ 	transition: 1s;
+
+ }
+
+ .history-order-box:hover{
+ 	box-shadow: 2px 2px 10px 2px grey;
+ 	transition: 1s;
+ }
+
+ .box-tab{
+ 	background-color: white;
+ 	padding: 20px;
+ }
+
+ .change-password-box{
+ 	width: 100%;
+ 	background-color: white;
+ 	padding: 5px 5px;
+ 	transition: 1s;
+ }
+
+ .change-password-box:hover{
+ 	box-shadow: 2px 2px 10px 2px grey;
+ 	transition: 1s;
+ }
+
+ .success-checkout-box{
+ 	width: 500px;
+ 	height: 100%;
+ 	background-color: white;
+ 	margin-left: auto;
+ 	text-align: center;
+ 	margin-right: auto;
+ }
+
+ @media only screen and (max-width: 576px){
+ 	.login-box {
+ 		margin-top: 50px;
+ 		margin-bottom: 50px;
+ 		background: white;
+ 		padding: auto auto;
+ 		width: 350px;
+ 		height: 100%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		border: 2px solid black;
+ 	}
+ }
+ @media only screen and (max-width: 576px){
+ 	.register-box {
+ 		margin-top: 10px;
+ 		margin-bottom: 10px;
+ 		background: white;
+ 		padding: auto auto
+ 		width: 350px;
+ 		height: 100%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		border: 2px solid black;
+ 	}
+ }
+
+ @media only screen and (max-width: 576px){
+ 	.sidebar{
+ 		width: 0;
+ 	}
+ 	.navbar-nav{
+ 		flex-direction: column;
+ 		top: 0;
+ 	}
+ 	.navbar-nav h4{
+ 		font-size: 22px;
+ 	}
+
+ 	#sidebarshowBtn{
+ 		display: block;
+ 		margin-bottom: 5px;
+ 	}
+ }
+
+ .scroll-to-top{
+ 	width: 50px;
+ 	height: 50px;
+ 	background-color: lightgrey;
+ 	color: white;
+ 	text-align: center;
+ 	line-height: 46px;
+ 	right: 15px;
+ 	bottom: 15px;
+ 	position: fixed;
+ 	display: none;
+ }
+
+ .scroll-to-top:hover{
+ 	background-color: grey;
+ 	color: white;
+ }
+
+ .user-tab{
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	background-color: white;
+ }
+ .user-tab-sidebar{
+ 	width: 250px;
+ 	background-color: orange;
+ 	color: white;
+ 	top: 0;
+ 	bottom: 0;
+ }
+ .user-tab-content{
+ 	width: 100%;
+ 	height: 100%;
+ 	margin 0 0;
+ }
+
+ #ajaxloading{
+ 	width: 80px;
+ 	height: 80px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	top: 50%;
+ 	bottom: 50%;
+ }
+
+ .user-tab-sidebar .user-tab-link{
+ 	display: block;
+ 	padding: 10px 10px;
+ 	margin: 10px;        
+ 	color: white;
+ }
+
+ .user-tab-sidebar .user-tab-link:hover{
+ 	background-color: grey;
+ }
+
+ @media only screen and (max-width: 576px){
+ 	.user-tab-sidebar{
+ 		width: 150px;
+ 		font-size: 14px;
+ 	}
+ 	.user-tab-link{
+ 		flex-direction: column;
+ 		top: 0;
+ 		text-align: center;
+ 	}
+ }
+
+ .product-list-view{
+    display: none;
+    width: 100%;
+    height: 250px;
+    background: white;
+    padding: 10px;
+}
+
+.product-list-img{
+    height: 100%;
+    width: 250px;
+    border: 1px solid grey;
+    background: orange;
+    float: left;
+    margin-right: 10px;
+}
+
+.product-list-body{
+    float: left;
+}
+.product-list-view:hover{
+    border: 1px solid grey;
+}
+
+

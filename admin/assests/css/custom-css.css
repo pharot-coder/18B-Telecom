@@ -1,0 +1,6 @@
+.btn-circle {
+    display: inline-block;
+    border-radius: 100px;
+    text-align: center;
+    width: inherit;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+  />
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+  ></script>
+  <title>Salary Form</title>
+</head>
+<body>
+  <div class="container mt-4 mb-4">
+    <div class="card">
+      <div class="card-title text-center mt-4">
+        <h3><b> Salary CC Evening Team Form </b></h3>
+      </div>
+      <div class="card-body">
+        <p class="text-center text-danger">
+          ចំណាំ: ប្រាក់ខែគោល + ប្រាប់ផលិតផល * គុណភាព + OT + ប្រាក់ផ្សេងៗ
+        </p>
+        <form id="salaryform">
+          <div class="form-row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="bsalary"> <b>Basic Salary </b></label>
+                <input
+                type="text"
+                class="form-control"
+                id="basicsalary"
+                placeholder="Enter Your Basic Salary"
+                required
+                />
+                <input
+                type="text"
+                class="form-control mt-2 mb-2"
+                id="productbasicsalary"
+                placeholder="Enter Total Product "
+                required
+                />
+                <input
+                type="text"
+                class="form-control mt-2 mb-2"
+                id="getbasicsalary"
+                placeholder=""
+                readonly
+                />
+                <label for="quality"> <b>Quality</b> </label>
+                    <!-- <input
+                    id="filterquality"
+                    type="range"
+                    class="border-0"
+                    min="0"
+                    max="10"
+                    />
+                    <input
+                    type="text"
+                    id="getquality"
+                    class="form-control"
+                    readonly
+                    /> -->
+                    <select id="quality" class="form-control" required>
+                      <option value="0" selected> -- Choose Quality --</option>
+                      <option value="0.8"> 0.80 </option>
+                      <option value="0.81">0.81</option>
+                      <option value="0.82">0.82</option>
+                      <option value="0.83">0.83</option>
+                      <option value="0.84"> 0.84</option>
+                      <option value="0.85"> 0.85</option>
+                      <option value="0.86"> 0.86</option>
+                      <option value="0.87"> 0.87</option>
+                      <option value="0.88">0.88</option>
+                      <option value="0.89"> 0.89</option>
+                      <option value="0.9"> 0.90</option>
+                      <option value="0.91"> 0.91</option>
+                      <option value="0.92"> 0.92</option>
+                      <option value="0.93"> 0.93</option>
+                      <option value="0.94"> 0.94</option>
+                      <option value="0.95">0.95</option>
+                      <option value="0.96"> 0.96</option>
+                      <option value="0.97">0.97</option>
+                      <option value="0.98">0.98</option>
+                      <option value="0.99"> 0.99</option>
+                      <option value="1"> 1</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="bsalary"> <b> Techical Support</b></label>
+                  <input
+                  type="text"
+                  class="form-control"
+                  id="technical"
+                  placeholder="Enter Technical Support"
+                  required
+                  />
+                  <input
+                  type="text"
+                  class="form-control mt-2 mb-2"
+                  id="gettechnical"
+                  placeholder=""
+                  readonly
+                  />
+                  <label for="ot"> <b>OT</b></label>
+                  <input
+                  type="text"
+                  class="form-control mb-2"
+                  id="ot"
+                  placeholder="Enter Your OT"
+                  />
+                  <input
+                  type="text"
+                  class="form-control mt-2 mb-2"
+                  id="getot"
+                  readonly
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-sm-6">
+                  <label for=""> <b>Total Product</b></label>
+                  <input
+                  type="text"
+                  class="form-control mt-2 mb-2"
+                  id="producttotal"
+                  placeholder="Enter Total Product"
+                  required
+                  />
+                  <input
+                  type="text"
+                  class="form-control mt-2 mb-2"
+                  id="getproducttotal"
+                  placeholder=""
+                  readonly
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <label for=""> <b>Allowance</b></label>
+                  <input
+                  type="text"
+                  class="form-control mt-2 mb-2"
+                  id="allowance"
+                  value="0"
+                  />
+                </div>
+              </div>
+              <p class="text-danger text-center">Note: Gas and Card = 15$</p>
+              <button class="btn btn-primary btn-block">Calculate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div
+      class="modal fade"
+      id="totalsalarymodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      >
+      <div class="modal-dialog modal-success" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Total Salary</h5>
+            <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+            >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <h3>Salary Will Get</h3>
+          </div>
+          <h5 class="text-center mt-2">
+            &#36; <span class="gettotalsalary"></span>
+          </h5>
+        </div>
+        <div class="modal-footer">
+          <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+          >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $("#productbasicsalary").on("focusout", function () {
+      var basicsalary = $("#basicsalary").val();
+      var productbasicsalary = $("#productbasicsalary").val();
+      $("#getbasicsalary").val((productbasicsalary / 2300) * basicsalary);
+    });
+    $("#technical").on("focusout", function () {
+      var technical = $("#technical").val();
+      $("#gettechnical").val(technical * 0.02);
+    });
+    $("#ot").on("focusout", function () {
+      var basicsalary = $("#basicsalary").val();
+      var ot = $("#ot").val();
+      var getot = (basicsalary / 26) * 2 * ot;
+      $("#getot").val(getot);
+    });
+    $("#filterquality").on("input change", function () {
+      var filterquality = $("#filterquality").val();
+      $("#getquality").val(filterquality);
+    });
+    $("#producttotal").on("focusout", function () {
+      var producttotal = $("#producttotal").val();
+      var getproducttotal = producttotal / 26;
+      var gettotalproductval = $("#getproducttotal");
+      if (getproducttotal >= 101) {
+        gettotalproductval.val(producttotal * 0.07);
+      } else if (getproducttotal >= 71) {
+        gettotalproductval.val(producttotal * 0.05);
+      } else {
+        gettotalproductval.val(producttotal * 0.03);
+      }
+    });
+    $("#salaryform").on("submit", function (e) {
+      e.preventDefault();
+      $("#totalsalarymodal").modal("show");
+      var getot = $("#getot").val();
+      var gettechnical = $("#gettechnical").val();
+      var quality = $("#quality").val();
+      var getbasicsalary = $("#getbasicsalary").val();
+      var getproducttotal = $("#getproducttotal").val();
+      var allowance = $("#allowance").val();
+      var other = 15;
+      var getbassaltotal =
+      parseFloat(getbasicsalary) +
+      parseFloat(getproducttotal) +
+      parseFloat(gettechnical);
+      var getsalarytotal =
+      getbassaltotal * quality + parseFloat(getot) + other + allowance;
+      $(".gettotalsalary").html(getsalarytotal);
+    });
+  });
+</script>
+</body>
+</html>
